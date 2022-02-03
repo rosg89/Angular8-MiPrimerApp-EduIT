@@ -1,0 +1,16 @@
+<p>Nombre del empleado: {{ nombre }}</p>
+<p>Edad: {{ edad }}</p>
+<p *ngIf="edad >=18">Es mayor de edad.</p> 
+
+<div>
+<table bordee="1">
+    <tr>
+        <td>Sueldo</td>
+    </tr>
+    <tr *ngFor= "let sueldo of sueldos">
+        <td> {{sueldo}}</td>
+    </tr>
+    
+</table>
+
+</div>
